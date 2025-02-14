@@ -1,5 +1,5 @@
 FROM bipinkrish/file-converter:latest
-RUN yarn install --ignore-engines
+RUN yarn install --production --ignore-engines
 RUN apt install iputils-ping -y
 
 COPY . .
